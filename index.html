@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Casey James</title>
-  <div style="float: right; width: 240px; margin-left: 40px; text-align: center;">
+  <div class="photo-column" style="float: right; width: 240px; margin-left: 40px; text-align: center;">
+
   <img src="IMG_6489.jpg" alt="Photo 1" style="width: 200px; border-radius: 10px; margin-bottom: 10px;"><br>
   <p style="font-size: 0.85em; color: gray;">My daughter and I eating dinner </p>
 
@@ -16,6 +17,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
+    @media (max-width: 768px) {
+  .photo-column {
+    float: none;
+    width: 100%;
+    margin: 40px auto 0 auto;
+    text-align: center;
+  }
+
+  .photo-column img {
+    width: 60%;
+    max-width: 250px;
+  }
+}
+
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
